@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+  <title>Is it safe to email?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Miles Matthias">
+  <meta name="description" content="A reference page for deciding how to send possibly sensitive information.">
+</head>
+<body>
+
+  <h1>Is it safe to email?</h1>
+
+  <p>It isn't very frequent that we email sensitive information, but if you're unsure, check this reference site!</p>
+
+  <h3>SSL Certificates</h3>
+
+  <p>Most of the confusion here comes with not knowing the different pieces that make up an SSL certificate. Here are the pieces and the recommended action:</p>
+
+  <ul>
+    <li><strong>Private key</strong> - Never email this. See the alternate methods below.</li>
+    <li><strong>Public key aka CSR</strong> - This is totally safe to email.</li>
+    <li><strong>SSL Certificate(s)</strong> - Usually when you purchase an SSL cert, you'll get several certificates. They're all safe to email. In fact, they're usually emailed to you from the vendor.</li>
+  </ul>
+
+  <h3>Credit Card Information</h3>
+
+  <p>No. Never.</p>
+
+
+  <h2>Alternative Methods</h2>
+
+  <p>Email is like a postcard - there's no protection for preying eyes. Here are some alternative methods to send sensitive information:</p>
+
+  <ul>
+    <li><strong>Services like Dropbox, Google Drive, etc.</strong> - Upload the sensitive information and then share the folder with the Dropbox account of the recipient. <strong>Important</strong>: do *not* simply copy and share the public link to the sensitive information.</li>
+    <li><strong>Diversify methods</strong> - If you have multiple pieces of information that need to be sent, don't send them all in the same method. Send one via a text message, one via Dropbox, and one via a phone call. Although not 100% safe, you'll lower the chance of an attacker collecting all of the pieces and putting them together.</li>
+  </ul>
+
+
+  <footer>
+    <p>Created by <a href="http://milesmatthias.com">Miles Matthias</a> of <a href="http://dojo4.com">dojo4</a>.</p>
+  </footer>
+
+</body>
+</html>
