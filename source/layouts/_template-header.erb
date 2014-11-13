@@ -1,0 +1,42 @@
+<% content_for :script do %>
+<script>
+  $('#menu-button').click(function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $('#template-nav').toggleClass('hidden-xs');
+  });
+</script>
+<% end %>
+
+  <section class="container">
+    <div class="header-inner">
+      <div class="row">
+        <hgroup class="col-sm-4 col-md-4 col-lg-4">
+          <h1 class="logo">
+            <% link_to '/' do %>
+              <i class="fa fa-arrow-circle-up"></i> ACME
+            <% end %>
+          </h1>
+        </hgroup>
+        <nav class="col-sm-8 col-md-8 col-lg-8" role="navigation">
+          <a id="menu-button" href="#template-nav" class="visible-xs">
+            Menu
+          </a>
+          <div id="template-nav" class="hidden-xs">
+            <ul>
+              <% 4.times.with_index do |link, i| %>
+                <li>
+                  <a href="#"<%= ' class="active"' if i == 0 %>>
+                    Link <%= (i + 1).to_s %>
+                  </a>
+                </li>
+              <% end %>
+              <li id="phone">
+                <%= link_to('303.867.5309', 'tel:303.867.5309') %>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>

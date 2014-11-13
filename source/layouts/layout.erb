@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <%= favicon_tag '/images/favicon.ico' %>
+    <%= stylesheet_link_tag "site.css" %>
+    <%= yield_content :style %>
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <%= javascript_include_tag 'modernizr-2.7.1.min.js', 'application' %>
+  </head>
+
+  <body class="<%= page_classes %>">
+
+    <header role="banner">
+      <% if current_page.url == '/' ## root? %>
+        <%= partial "layouts/header" %>
+      <% else %>
+        <%= partial "layouts/template-header" %>
+      <% end %>
+    </header>
+
+    <main role="main">
+      <%= yield %>
+    </main>
+
+    <footer role="contentinfo">
+      <% if current_page.url == '/' ## root? %>
+        <%= partial "layouts/footer" %>
+      <% else %>
+        <%= partial "layouts/template-footer" %>
+      <% end %>
+    </footer>
+
+  <%= yield_content :script %>
+
+  </body>
+</html>

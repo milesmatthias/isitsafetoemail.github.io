@@ -1,0 +1,167 @@
+
+<section class="hero">
+  <div class="container">
+    <hgroup class="row">
+      <h1 class="hero-title">
+        Is it safe to email?
+      </h1>
+      <div class="cta-button cta-button-md cta-button-center">
+        <% link_to '#topics' do %>
+          Find out! <i class="fa fa-chevron-circle-right"></i>
+        <% end %>
+      </div>
+    </hgroup>
+  </div>
+</section>
+
+<section class="page-section" id="topics">
+  <div class="container">
+    <div class="page-section-inner">
+      <h2 class="page-section-teaser elegant-rule">
+        It isn't very frequent that we email sensitive information, but if you're unsure, check this reference site!
+      </h2>
+      <div class="row logo-parade logo-parade-condensed">
+
+        <figure class="col-xs-6 col-sm-3 col-md-2 col-lg-2 logo-parade-box">
+          <% link_to '#ssl-certs' do %>
+            <i class="fa fa-lock"></i>
+            SSL Certs
+          <% end %>
+        </figure>
+
+        <figure class="col-xs-6 col-sm-3 col-md-2 col-lg-2 logo-parade-box">
+          <% link_to '#credit-cards' do %>
+            <i class="fa fa-credit-card"></i>
+            Credit Cards
+          <% end %>
+        </figure>
+
+        <figure class="col-xs-6 col-sm-3 col-md-2 col-lg-2 logo-parade-box">
+          <% link_to '#alternate-methods' do %>
+            <i class="fa fa-comments-o"></i>
+            Alternative Methods
+          <% end %>
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section page-section-dark" id="ssl-certs">
+  <div class="container">
+    <div class="page-section-inner">
+      <div class="row">
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            SSL Certificates
+          </h2>
+          <p>
+            SSL Certificates are purchased every couple of years, so people often forget the safe way to purchase and send SSL certificates. If you're like any of the people we know, this page should be bookmarked for each year when you purchase your SSL cert. Not properly sending your SSL cert to your developer will result in wasted time having to re-key your certificate (if your developer is smart), or worse - attackers breaking your SSL encryption and making your customers vulnerable to personal identify theft.
+          </p>
+        </article>
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            Background
+          </h2>
+          <p>
+            Improper handling of SSL certs usually comes from not knowing the parts that make up an SSL cert, which are given to you from a vendor when you purchase one. An SSL certificate consists of a private key, a public key, and a certificate. The certificate is used to identify your organization to visiting browsers. It's used in conjuntion with a certificate bundle or chain, which is provided by your vendor, to point to certificate authorities (CAs) that can be trusted in saying that yes, your site is yours. The private key and public key are used to create the encryption which protects your users' information from being stolen by attackers. The process of creating a SSL cert starts with creating a private and public key pair, sending the public key (via a CSR - Certificate Signing Request) to the certificate authority (CA - your vendor), and receiving the SSL certificate from the vendor.
+          </p>
+        </article>
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            What's safe to email?
+          </h2>
+          <p>
+            <ul>
+              <li><strong>SSL Certificate &amp; Chain/Bundle Certs</strong>: safe to email.</li>
+              <li><strong>Public Key / CSR</strong>: safe to email.</li>
+              <li><strong>Private Key</strong>: <strong>NOT</strong> safe to email!</li>
+            </ul>
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="page-section-inner">
+      <div class="row">
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            Credit Cards
+          </h2>
+          <p>
+            This should be obvious, but stolen credit card numbers are a huge source of personal identity theft. Want to avoid fighting with your credit card company about purchases you didn't make and having to replace your card every week? Follow our advice here.
+          </p>
+        </article>
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            Background
+          </h2>
+          <p>
+            A credit card has a few components - the credit card number, the expiration date, and the CVV (Card Verification Value). The minimum an attacker needs to charge something to your card is the credit card number and expiration date. The CVV number is being required on more and more sites, but because of strong regulations on how servers should handle the CVV number, some companies (online and off) don't require it.
+          </p>
+        </article>
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            What's safe to email?
+          </h2>
+          <p>
+            Nothing. Never, ever, send any credit card information to anyone via email. Sending a picture of a credit card is equally as unsecure.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section page-section-dark">
+  <div class="container">
+    <div class="page-section-inner">
+      <div class="row">
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            Alternative Methods
+          </h2>
+          <p>
+            Email is like a postcard - there's no protection for preying eyes. Just like you write a message on the outside of a postcard and anyone who has your postcard can read your message, anyone that has your email can read your content. And unlike a postcard, it's incredibly easy to capture millions of emails from anywhere in the world.
+          </p>
+        </article>
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            Alternatives
+          </h2>
+          <p>
+            <ul>
+              <li>
+                Services like Dropbox, Google Drive, etc. - Upload the sensitive information and then share the folder with the Dropbox account of the recipient. Important: do *not* simply copy and share the public link to the sensitive information.
+              </li>
+              <li>If it's not possible for you to encrypt your transmissions, in the very least, transmit your information in pieces across multiple mediums. While this isn't a perfect solution, it will make it harder for an attacker to collect the entire transmission to use it against you.</li>
+            </ul>
+          </p>
+        </article>
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            Other notes
+          </h2>
+          <p>
+            Security is not black and white. Car manufacturers do their best to put safety measures like airbags and seatbelts in cars, which will protect against the loss of human life in most situations, however when a car is stuck on the train tracks, no amount of safety measures will save you against a train. Security is similar - everyone should take proper precautions to protect themselves against most situations, but everything is ultimately breakable with enough force. Having a backup plan when things do go wrong is important as well.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="page-section-inner">
+      <h2 class="page-section-teaser elegant-rule">
+        Have more questions? Feel free to <a href="mailto:dojo4@dojo4.com?subject=Isitsafetoemail?">contact us</a>!
+      </h2>
+    </div>
+  </div>
+</section>
